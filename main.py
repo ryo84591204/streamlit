@@ -1,26 +1,7 @@
 import streamlit as st
-import numpy as np
-import pandas as pd
-from PIL import Image
 import time
 
-st.title("Streamit")
-
-df = pd.DataFrame(
-    np.random.rand(20, 3),
-    columns=['a', 'b', 'c']
-)
-
-# st.dataframe(df, width=500, height=200)
-# st.bar_chart(df)
-
-# df1 = pd.DataFrame(
-#     np.random.rand(100, 2)/[50, 50] + [35.69, 139.70],
-#     columns=['lat', 'lon']
-# )
-
-# st.dataframe(df1, width=500, height=200)
-# st.map(df1)
+st.title("Streamit入門")
 
 st.write('プログレスバーの表示')
 'Start!!'
@@ -50,13 +31,3 @@ option = st.text_input('あなたの趣味を教えてください。')
 
 condition = st.slider('あなたの今の調子は？', 0, 100, 50)
 'コンディション', condition
-
-# option = st.selectbox(
-#     'あなたが好きな数字を教えてください。',
-#     list(range(1, 11))
-# )
-
-# 'あなたの好きな数字は、', option, 'です'
-# if st.checkbox('Show Image'):
-#     img = Image.open('tenjin_4_p6w8ekj7.jpg')
-#     st.image(img, caption='under the same sky', use_column_width=True)
